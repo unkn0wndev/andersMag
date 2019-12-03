@@ -1,0 +1,11 @@
+.a:hover .a,
+.cls-2:hover .cls2{
+  transform-origin: 50% 50%;
+ animation: a-grow ease-out 500ms;
+}
+
+@@keyframes a-grow {
+ 0% { transform: scaleX(1.5);}
+ 50% { transform: scaleX(2);}
+ 100% { transform: scaleX(3);}
+}
