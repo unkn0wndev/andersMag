@@ -33,6 +33,8 @@ vierkantlijn.to(hart, 10, {
 }, 0);
 
 hart.addEventListener('click', _ => {
+
+
   hartlijn.to(hart, 10, {
       rotation: 360,
       transformOrigin: "center",
