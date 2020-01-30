@@ -22,6 +22,8 @@ const hartlijn = new TimelineMax({});
 const vierkantlijn = new TimelineMax({});
 
 
+
+
 vierkantlijn.to(hart, 10, {
   rotation: 360,
   transformOrigin: "center",
@@ -43,6 +45,7 @@ hart.addEventListener('click', _ => {
       repeat: -1
     },
     0);
+
 })
 
 
@@ -62,9 +65,28 @@ ma.addEventListener('click', _ => {
   });
 })
 
+letterN.addEventListener('click', _ => {
+  document.body.style.backgroundColor = "Blue";
+})
+letterN.addEventListener('click', _ => {
+  document.body.style.backgroundColor = "Red";
+})
+letterE.addEventListener('click', _ => {
+  document.body.style.backgroundColor = "Purple";
+})
+letterR.addEventListener('click', _ => {
+  document.body.style.backgroundColor = "Black";
+})
+letterS.addEventListener('click', _ => {
+  document.body.style.backgroundColor = "Pink";
+})
+
+
+
 
 // TweenMax.to(letterA, 2, {x:100});
 letterA.addEventListener('click', _ => {
+  document.body.style.backgroundColor = "Grey";
   tlm.to(letterA, 1, {
     scaleX: 7
   });
